@@ -69,23 +69,36 @@
     //Console.WriteLine("Hola "+nombre+" tu promedio es de " + promedio);
 
 
-int num, max, min,mayor, menor;
-max = 0;
-min = int.MaxValue;
-do
-{
-    num = Convert.ToInt32(Console.ReadLine());
-    if (num< min && num!=0)
-    {
-        min = num;
-    }
-    if (num > max)
-    {
-        max = num;
-    }
+//int num, max, min,mayor, menor;
+//max = 0;
+//min = int.MaxValue;
+//do
+//{
+//    num = Convert.ToInt32(Console.ReadLine());
+//    if (num< min && num!=0)
+//    {
+//        min = num;
+//    }
+//    if (num > max)
+//    {
+//        max = num;
+//    }
 
-} while (num != 0);
-Console.WriteLine(min);
-Console.WriteLine(max);
-
-Console.WriteLine("");    
+//} while (num != 0);
+//Console.WriteLine(min);
+//Console.WriteLine(max);
+ 
+//ADIVINAR EL NUMERO EN EL QUE PIENSA
+Console.WriteLine("Piensa un numero porfa");
+Console.WriteLine("Muy bien, cuando termines, multiplica ese numero por 2");
+Console.WriteLine("Muy bien, cuando termines, a ese resultado sumale 8");
+Console.WriteLine("Muy bien, cuando termines, ese resultado multiplicalo por 5");
+Console.WriteLine("Muy bien, Ahora por favor dime tu resultado final :)");
+string num= Console.ReadLine();
+int ult = 1;
+num=num.Remove(num.Length-ult);
+int numm=Convert.ToInt32(num);
+numm = numm - 4;
+Console.WriteLine("Mmmm...");
+Console.WriteLine("El numero en el que pensaste es... " + numm + " Verdad?");
+Console.WriteLine("Yo lo se todo amigo ;)");
